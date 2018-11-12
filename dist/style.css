@@ -58,7 +58,6 @@ h2 {
 p {
   font-family: 'Raleway Medium';
   font-size: 16px;
-  line-height: 28px;
 }
 p.footer-text {
   font-size: 14px;
@@ -133,7 +132,7 @@ header .wrapper-header .row .logo-wrapper .logo-text-wrapper .company-name {
   font-family: 'Evolventa Bold';
   color: #DF3620;
   font-size: 30px;
-  margin-top: 3px;
+  margin-top: -5px;
   margin-bottom: 0px;
 }
 header .wrapper-header .row .logo-wrapper .logo-text-wrapper .company-description {
@@ -168,4 +167,13 @@ header .menu-container p {
   text-align: center;
   font-size: 16px;
   padding-top: 30px;
+}
+footer .row {
+  border-top: 1px solid rgba(0, 38, 68, 0.1);
+}
+footer .row p {
+  font-family: 'Raleway Medium';
+  font-size: 16px;
+  padding-top: 24px;
+  padding-bottom: 30px;
 }
