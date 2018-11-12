@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Evolventa Bold';
+  src: url('../fonts/Evolventa-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  color: #002644;
+}
+@font-face {
+  font-family: 'Evolventa Oblique';
+  src: url('../fonts/Evolventa-Oblique.ttf');
+  font-weight: normal;
+  color: #fff;
+}
+@font-face {
+  font-family: 'Evolventa Regular';
+  src: url('../fonts/Evolventa-Regular.ttf');
+  font-weight: normal;
+  color: #fff;
+}
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../fonts/Montserrat-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+  color: #002644;
+}
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url('../fonts/Raleway-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  color: #002644;
+}
+@font-face {
+  font-family: 'Raleway Light Italic';
+  src: url('../fonts/Raleway-Light-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+  color: #002644;
+}
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url('../fonts/Raleway-Medium.ttf');
+  font-weight: normal;
+  font-style: italic;
+  color: #002644;
+}
+h1 {
+  font-family: 'Evolventa Bold';
+  font-size: 24px;
+  line-height: 48px;
+}
+h2 {
+  font-family: 'Raleway Bold';
+  font-size: 16px;
+  line-height: 28px;
+}
+p {
+  font-family: 'Raleway Medium';
+  font-size: 16px;
+  line-height: 28px;
+}
+p.footer-text {
+  font-size: 14px;
+  line-height: 25px;
+}
+p.date-text {
+  font-family: 'Montserrat Medium';
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+p.cost-text {
+  font-family: 'Raleway Light Italic';
+  font-size: 48px;
+  line-height: 85px;
+}
+.button {
+  font-family: 'Raleway Bold';
+  width: 260px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  color: #fff;
+  padding: 10px 0 5px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin: 12px 10px;
+  cursor: pointer;
+}
+.button.button-default {
+  background-color: #008EFF;
+}
+.button.button-default:hover {
+  background-color: #33A5FF;
+}
+.button.button-default:active {
+  background-color: #00508F;
+}
+.button.button-default-accent {
+  background-color: #DF3620;
+}
+.button.button-default-accent:hover {
+  background-color: #E55E4D;
+}
+.button.button-default-accent:active {
+  background-color: #592C36;
+}
+header .wrapper-header {
+  max-width: 1440px;
+  height: 295px;
+  background: url("../img/header.png") no-repeat;
+}
+header .wrapper-header .row {
+  padding-top: 39px;
+  color: #fff;
+}
+header .wrapper-header .row .logo-wrapper .img-logo {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+header .wrapper-header .row .logo-wrapper .img-logo img {
+  width: 59px;
+}
+header .wrapper-header .row .logo-wrapper .logo-text-wrapper {
+  margin-left: -25px;
+  float: left;
+  text-align: center;
+  width: 195px;
+}
+header .wrapper-header .row .logo-wrapper .logo-text-wrapper .company-name {
+  font-family: 'Evolventa Bold';
+  color: #DF3620;
+  font-size: 30px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+header .wrapper-header .row .logo-wrapper .logo-text-wrapper .company-description {
+  font-family: 'Evolventa Regular';
+  font-size: 12px;
+}
+header .wrapper-header .row .info-wrapper {
+  max-width: 340px;
+}
+header .wrapper-header .row .info-wrapper p {
+  font-family: 'Evolventa Oblique';
+  font-size: 16px;
+  line-height: 26px;
+}
+header .wrapper-header .row .contacts-wrapper p {
+  font-family: 'Evolventa Bold';
+  font-size: 16px;
+  line-height: 28px;
+}
+header .wrapper-header .row .contacts-wrapper p img {
+  padding-right: 8px;
+}
+header .menu-container {
+  text-align: center;
+}
+header .menu-container img {
+  height: 100px;
+}
+header .menu-container p {
+  font-family: 'Raleway Bold';
+  color: #002644;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 30px;
+}
