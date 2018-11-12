@@ -1,0 +1,38 @@
+.button {
+  font-family: 'Raleway Bold';
+  width: 260px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  color: @white;
+  padding: 10px 0 5px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin: 12px 10px;
+  cursor: pointer;
+
+  &.button-default {
+    background-color: @blue;
+
+    &:hover {
+      background-color: #33A5FF;
+    }
+
+    &:active {
+      background-color: #00508F;
+    }
+  }
+
+  &.button-default-accent {
+
+    background-color: @red;
+
+    &:hover {
+      background-color: #E55E4D;
+    }
+
+    &:active {
+      background-color: #592C36;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Evolventa Bold';
+  src: url('../fonts/Evolventa-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  color: #002644;
+}
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../fonts/Montserrat-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+  color: #002644;
+}
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url('../fonts/Raleway-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  color: #002644;
+}
+@font-face {
+  font-family: 'Raleway Light Italic';
+  src: url('../fonts/Raleway-Light-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+  color: #002644;
+}
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url('../fonts/Raleway-Medium.ttf');
+  font-weight: normal;
+  font-style: italic;
+  color: #002644;
+}
+h1 {
+  font-family: 'Evolventa Bold';
+  font-size: 24px;
+  line-height: 48px;
+}
+h2 {
+  font-family: 'Raleway Bold';
+  font-size: 16px;
+  line-height: 28px;
+}
+p {
+  font-family: 'Raleway Medium';
+  font-size: 16px;
+  line-height: 28px;
+}
+p.footer-text {
+  font-size: 14px;
+  line-height: 25px;
+}
+p.date-text {
+  font-family: 'Montserrat Medium';
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+p.cost-text {
+  font-family: 'Raleway Light Italic';
+  font-size: 48px;
+  line-height: 85px;
+}
+.button {
+  font-family: 'Raleway Bold';
+  width: 260px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  color: #fff;
+  padding: 10px 0 5px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin: 12px 10px;
+  cursor: pointer;
+}
+.button.button-default {
+  background-color: #008EFF;
+}
+.button.button-default:hover {
+  background-color: #33A5FF;
+}
+.button.button-default:active {
+  background-color: #00508F;
+}
+.button.button-default-accent {
+  background-color: #DF3620;
+}
+.button.button-default-accent:hover {
+  background-color: #E55E4D;
+}
+.button.button-default-accent:active {
+  background-color: #592C36;
+}
+.uikit-page-wrapper {
+  padding: 44px 54px;
+}
+.color-block div {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 40px 0;
+}
+.color-block .color-red {
+  background-color: #DF3620;
+}
+.color-block .color-dark-blue {
+  background-color: #002644;
+}
+.color-block .color-blue {
+  background-color: #008EFF;
+}
+.color-block .color-blue-gray {
+  background-color: #70ABCB;
+}
+.color-block .color-gray {
+  background-color: #C1DDEA;
+}
+.buttons-block .float-block:first-child {
+  margin-left: -10px;
+}
+.buttons-block .float-block {
+  float: left;
+}
+.buttons-block .float-block .button-default-hover {
+  background-color: #33A5FF;
+}
+.buttons-block .float-block .button-default-active {
+  background-color: #00508F;
+}
+.buttons-block .float-block .button-default-accent-hover {
+  background-color: #E55E4D;
+}
+.buttons-block .float-block .button-default-accent-active {
+  background-color: #592C36;
+}
+.clearfix {
+  clear: both;
+}
