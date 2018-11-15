@@ -1,0 +1,53 @@
+.order-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid @blue;
+  border-radius: 8px;
+  height: auto;
+
+  .row {
+    padding: 20px 5px;
+
+    .order-button-wrapper {
+      padding-top: 25px;
+
+      .rotate {
+        transform: rotate(180deg);
+      }
+
+      .order-button {
+        max-width: 50px;
+        max-height: 50px;
+        transition: 1s;
+
+        .icon-arrow {
+          width: 50px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .order-name-text {
+      font-family: "Raleway Bold";
+      font-size: 16px;
+    }
+
+    .order-pre-price {
+      font-family: "Raleway Medium";
+      font-size: 16px;
+      padding-top: 35px;
+      padding-right: 10px;
+      float: left;
+    }
+
+    .order-price {
+      font-family: "Raleway Light Italic";
+      font-size: 48px;
+    }
+
+    .order-description-content {
+      display: none;
+      max-width: 900px;
+    }
+  }
+}
