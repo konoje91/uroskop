@@ -105,6 +105,27 @@ p.cost-text {
 .button.button-default-accent:active {
   background-color: #592C36;
 }
+.sidebar-button {
+  font-family: "Raleway Medium";
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  margin: 24px 0px;
+  padding: 10px 0px;
+}
+.sidebar-button:hover {
+  text-decoration: none;
+}
+.sidebar-button.red-button {
+  background-color: #DF3620;
+}
+.sidebar-button.blue-button {
+  background-color: #008EFF;
+}
 header .wrapper-header {
   max-width: 1440px;
   height: 295px;
@@ -220,4 +241,8 @@ footer .row p {
 .order-container .row .order-description-content {
   display: none;
   max-width: 900px;
+}
+.right-sidebar-block {
+  padding-left: 0px;
+  padding-right: 0px;
 }
