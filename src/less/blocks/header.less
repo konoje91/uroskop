@@ -1,7 +1,8 @@
 header {
   .wrapper-header {
     max-width: 1440px;
-    height: 295px;
+    min-height: 295px;
+    margin: 0 auto;
     background: url("../img/header.png") no-repeat;
 
     .row {
@@ -36,27 +37,54 @@ header {
 
           .company-description {
             font-family: 'Evolventa Regular';
-            font-size: 12px;
+            font-size: 13px;
+            font-weight: bold;
           }
         }
 
       }
 
       .info-wrapper {
-        max-width: 340px;
+        max-width: 445px;
+        margin-left: -20px;
 
         p {
           font-family: 'Evolventa Oblique';
-          font-size: 16px;
+          font-size: 20px;
           line-height: 26px;
+          font-weight: bold;
+          text-align: center;
         }
       }
 
       .contacts-wrapper {
+        .phone-header-block {
+          margin-bottom: 0px;
+
+          img {
+            display: inline-block;
+            padding-bottom: 20px;
+          }
+
+          span {
+            display: inline-block;
+            line-height: 20px;
+          }
+        }
+
         p {
           font-family: 'Evolventa Bold';
           font-size: 16px;
           line-height: 28px;
+
+          &.address {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+
+          a {
+            color: @white;
+          }
 
           img {
             padding-right: 8px;
@@ -69,15 +97,32 @@ header {
   .menu-container {
     text-align: center;
 
-    img {
-      height: 100px;
+    .col {
+      padding-right: 10px;
+      padding-left: 10px;
+
+      img {
+        height: 100px;
+      }
+      p {
+        font-family: 'Raleway Bold';
+        color: @dark-blue;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 30px;
+
+        &.active {
+          color: @blue;
+        }
+      }
     }
-    p {
-      font-family: 'Raleway Bold';
-      color: @dark-blue;
-      text-align: center;
-      font-size: 16px;
-      padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    .wrapper-header {
+      background-color: @dark-blue;
     }
   }
 }

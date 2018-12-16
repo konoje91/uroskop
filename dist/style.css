@@ -115,7 +115,10 @@ p.cost-text {
   width: 100%;
   border-radius: 8px;
   margin: 24px 0px;
-  padding: 10px 0px;
+  padding: 8px 0px;
+}
+.sidebar-button:first-child {
+  margin-top: 0px;
 }
 .sidebar-button:hover {
   text-decoration: none;
@@ -128,7 +131,8 @@ p.cost-text {
 }
 header .wrapper-header {
   max-width: 1440px;
-  height: 295px;
+  min-height: 295px;
+  margin: 0 auto;
   background: url("../img/header.png") no-repeat;
 }
 header .wrapper-header .row {
@@ -158,20 +162,42 @@ header .wrapper-header .row .logo-wrapper .logo-text-wrapper .company-name {
 }
 header .wrapper-header .row .logo-wrapper .logo-text-wrapper .company-description {
   font-family: 'Evolventa Regular';
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: bold;
 }
 header .wrapper-header .row .info-wrapper {
-  max-width: 340px;
+  max-width: 445px;
+  margin-left: -20px;
 }
 header .wrapper-header .row .info-wrapper p {
   font-family: 'Evolventa Oblique';
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+header .wrapper-header .row .contacts-wrapper .phone-header-block {
+  margin-bottom: 0px;
+}
+header .wrapper-header .row .contacts-wrapper .phone-header-block img {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+header .wrapper-header .row .contacts-wrapper .phone-header-block span {
+  display: inline-block;
+  line-height: 20px;
 }
 header .wrapper-header .row .contacts-wrapper p {
   font-family: 'Evolventa Bold';
   font-size: 16px;
   line-height: 28px;
+}
+header .wrapper-header .row .contacts-wrapper p.address {
+  cursor: pointer;
+  text-decoration: underline;
+}
+header .wrapper-header .row .contacts-wrapper p a {
+  color: #fff;
 }
 header .wrapper-header .row .contacts-wrapper p img {
   padding-right: 8px;
@@ -179,15 +205,30 @@ header .wrapper-header .row .contacts-wrapper p img {
 header .menu-container {
   text-align: center;
 }
-header .menu-container img {
+header .menu-container .col {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+header .menu-container .col img {
   height: 100px;
 }
-header .menu-container p {
+header .menu-container .col p {
   font-family: 'Raleway Bold';
   color: #002644;
   text-align: center;
   font-size: 16px;
   padding-top: 30px;
+}
+header .menu-container .col p.active {
+  color: #008EFF;
+}
+@media only screen and (max-width: 1024px) {
+  header .wrapper-header {
+    background-color: #002644;
+  }
+}
+footer {
+  margin-top: 90px;
 }
 footer .row {
   border-top: 1px solid rgba(0, 38, 68, 0.1);
@@ -237,12 +278,127 @@ footer .row p {
 .order-container .row .order-price {
   font-family: "Raleway Light Italic";
   font-size: 48px;
+  float: left;
+  padding-right: 5px;
+}
+.order-container .row .order-currency {
+  padding-top: 30px;
+  padding-right: 10px;
+}
+.order-container .row .order-currency img {
+  width: 25px;
 }
 .order-container .row .order-description-content {
   display: none;
   max-width: 900px;
+  clear: both;
+}
+.order-container .row .order-description-content img {
+  width: 15px;
+}
+.order-container .row .order-description-text {
+  clear: both;
+}
+.order-container .row .order-description-text img {
+  width: 15px;
 }
 .right-sidebar-block {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.content {
+  padding-top: 80px;
+}
+.content .content-wrapper h1 {
+  margin-bottom: 20px;
+  line-height: normal;
+  color: #DF3620;
+}
+.content .content-wrapper .content-icon {
+  float: left;
+  display: block;
+  min-height: 60px;
+  padding-right: 11px;
+}
+.content .content-wrapper .content-icon img {
+  width: 20px;
+  height: 20px;
+}
+.content .content-wrapper .content-wrapper-text .content-info {
+  font-family: "Raleway Bold";
+  margin-bottom: 0px;
+}
+.content-table {
+  padding-top: 40px;
+}
+.content-table .custom-table .cell-center {
+  text-align: center;
+  font-size: 18px;
+}
+.content-table .custom-table img {
+  height: 15px;
+}
+.author {
+  padding-top: 85px;
+}
+.how-we-work {
+  padding-top: 60px;
+}
+.how-we-work h2 {
+  font-family: "Evolventa Bold";
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #DF3620;
+}
+.how-we-work p:first-child {
+  padding-top: 30px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.how-we-work .work-img-wrapper {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #C1DDEA;
+}
+.how-we-work .work-img-wrapper img {
+  margin: auto;
+}
+.comments {
+  padding-top: 60px;
+}
+.comments h2 {
+  font-family: "Evolventa Bold";
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #DF3620;
+}
+.comments .col-sm-3 {
+  text-align: center;
+}
+.comments .col-sm-3 a {
+  color: #002644;
+}
+.comments .col-sm-3 img {
+  width: auto;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+}
+.modal {
+  text-align: center;
+}
+.modal-dialog {
+  max-width: 700px;
+  text-align: left;
+  width: auto !important;
+  display: inline-block;
+}
+.modal-dialog #politicsModalLabel {
+  margin-left: 190px;
+  font-weight: bold;
+  color: #DF3620;
 }

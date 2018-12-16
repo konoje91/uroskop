@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="dist/bootstrap.css">
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/style.css?v=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
     <title>Title</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <div class="wrapper-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <div class="logo-wrapper">
                             <div class="img-logo">
                                 <img src="img/logo.png">
@@ -23,16 +24,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <div class="info-wrapper">
                             <p>Профессиональные юридические услуги для бизнеса и частных лиц</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="contacts-wrapper">
-                            <p><img src="img/icon-phone.png">+7 927 659 58 98</p>
-                            <p><img src="img/icon-email.png">uroskop@mail.ru</p>
-                            <p><img src="img/icon-map.png">г. Самара, ул. Рабочая, д. 43, секция 5</p>
+                            <p class="phone-header-block">
+                                <img src="img/icon-phone.png">
+                                <span>8 (846) 22 22 001 <br> 8 (927) 659 58 98</span>
+                            </p>
+                            <p><img src="img/icon-email.png"><a href="mailto:uroskop@mail.ru">uroskop@mail.ru</a></p>
+                            <p class="address" data-toggle="modal" data-target="#addressModal"><img src="img/icon-map.png">г. Самара, ул. Рабочая, д. 43, секция 5</p>
                         </div>
                     </div>
                 </div>
@@ -41,31 +45,35 @@
         <div class="container menu-container">
             <div class="row">
                 <div class="col">
-                    <a href="#">
+                    <a href="arendnie-spori.html">
                         <img src="img/arendnie-spori.png">
                         <p>Арендные споры</p>
                     </a>
                 </div>
                 <div class="col">
-                    <a href="#">
+                    <a href="sudebnya-zashita.html">
                         <img src="img/sudebnya-zashita.png">
-                        <p>Судебная защита прав и интересов</p>
+                        <p>Судебная защита прав <br>
+                            и интересов</p>
                     </a>
                 </div>
                 <div class="col">
-                    <a href="#">
+                    <a href="zalobi-fas.html">
                         <img src="img/zalobi-fas.png">
-                        <p>44-ФЗ/223-ФЗ: жалобы, ФАС, РНП в гос.закупках и тендерах</p>
+                        <p>44-ФЗ / 223-ФЗ: <br>
+                            жалобы, ФАС, РНП <br>
+                            в гос. закупках и тендерах</p>
                     </a>
                 </div>
                 <div class="col">
-                    <a href="#">
+                    <a href="sdelki-s-nedvizimostyu.html">
                         <img src="img/sdelki-s-nedvizimostyu.png">
-                        <p>Сделки с недвижимостьюы</p>
+                        <p>Сделки <br>
+                            с недвижимостью</p>
                     </a>
                 </div>
                 <div class="col">
-                    <a href="#">
+                    <a href="korporativnim-klientam.html">
                         <img src="img/korporativnim-klientam.png">
                         <p>Корпоративным клиентам</p>
                     </a>
@@ -78,58 +86,191 @@
         <div class="row">
             <div class="col-sm-9">
                 <div class="content-wrapper">
-                    <p>Текс</p>
+                    <h1>«ЮРОСКОП»</h1>
+                    <div class="content-list-info">
+                        <div class="content-icon"><img class="icon-search" src="img/icon-search.png"></div>
+                        <div class="content-wrapper-text">
+                            <p class="content-info">Потеряли доверие к юристам?</p>
+                            <p class="content-description">Мы докажем, что профессионализм - это не слово, а дело</p>
+                        </div>
+                    </div>
+                    <div class="content-list-info">
+                        <div class="content-icon"><img class="icon-search" src="img/icon-search.png"></div>
+                        <div class="content-wrapper-text">
+                            <p class="content-info">Надоел поверхностный подход?</p>
+                            <p class="content-description">Мы смотрим дальше, чем Вы нас попросили</p>
+                        </div>
+                    </div>
+                    <div class="content-list-info">
+                        <div class="content-icon"><img class="icon-search" src="img/icon-search.png"></div>
+                        <div class="content-wrapper-text">
+                            <p class="content-info">На Вас хотят заработать?</p>
+                            <p class="content-description">Мы даем объективный расклад, а Вы принимаете решение</p>
+                        </div>
+                    </div>
+                    <div class="content-list-info">
+                        <div class="content-icon"><img class="icon-search" src="img/icon-search.png"></div>
+                        <div class="content-wrapper-text">
+                            <p class="content-info">Боитесь пропустить важное?</p>
+                            <p class="content-description">Мы всегда на связи, а при необходимости всегда вызвоним Вас</p>
+                        </div>
+                    </div>
+                    <div class="content-list-info">
+                        <div class="content-icon"><img class="icon-search" src="img/icon-search.png"></div>
+                        <div class="content-wrapper-text">
+                            <p class="content-info">Обидно возвращаться к «решенным» проблемам?</p>
+                            <p class="content-description">Мы сбережем Ваши нервы, предупредив о возможных рисках</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3 right-sidebar-block">
                 <div class="right-sidebar-wrapper">
-                    <a href="#" class="sidebar-button red-button">Отзывы клиентов</a>
-                    <a href="#" class="sidebar-button blue-button">Политика в области качества</a>
                     <a href="#" class="sidebar-button blue-button">О компании</a>
+                    <a href="#" class="sidebar-button comments-link red-button">Отзывы клиентов</a>
+                    <a href="#" class="sidebar-button blue-button" data-toggle="modal" data-target="#politicsModal">Политика в области качества</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--<div class="container order-container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-sm-11">-->
-                <!--<div class="order-main-content">-->
-                    <!--<p class="order-name-text">Составление договора аренды</p>-->
-                    <!--<p class="order-pre-price">от</p>-->
-                    <!--<p class="order-price">2 500</p>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-sm-1 order-button-wrapper">-->
-                <!--<div class="order-button js-button-show-order">-->
-                    <!--<img class="icon-arrow" src="img/icon-arrow.png">-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-sm-11 order-description-content">-->
-                <!--<p class="order-description-text">В зависимости от Вашей потребности, нами будет подготовлен договор с учетом особенностей каждого объекта аренды.</p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="container author">
+        <div class="row">
+            <div class="col-sm-3">
+                <img width="100%" src="img/author.png">
+            </div>
+            <div class="col-sm-9">
+                <p>Я, Старчевая Зоя, — руководитель компании, практикующий юрист с 10-ти летним стажем работы в различных сферах деятельности: оказание юридических услуг населению и предпринимателям, строительство, коммерческая недвижимость, банковская сфера.</p>
+                <p>Будучи руководителем различных коллективов, я всегда рассматривала качество, как неотъемлемую и основополагающую характеристику деятельности своего коллектива, закладывая его на каждый из этапов нашей работы. Вы оцените это уже при первичном знакомстве, когда с помощью простых, но четких вопросов будет выяснена Ваша проблема. Многолетний опыт работы позволит правильно оценить текущую ситуацию и предложить пути решения, а четкое понимание Ваших потребностей поможет всесторонне оценить риски и согласовать конкретный план действий.</p>
+                <p>Регулярное участие в судах различных инстанций, работа с Федеральной антимонопольной службой, Росреестром и другими госслужбами обеспечат грамотное ведение дела с обходом «подводных камней» и достижение желаемого результата.</p>
+                <p>Компания «ЮРОСКОП» вышла на рынок, чтобы помогать решать Ваши вопросы и выводить Вас из, казалось бы, безнадежных ситуаций.</p>
+            </div>
+        </div>
+    </div>
 
-    <!--<div class="container order-container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-sm-11">-->
-                <!--<div class="order-main-content">-->
-                    <!--<p class="order-name-text">Правовая экспертиза проекта договора аренды</p>-->
-                    <!--<p class="order-pre-price">от</p>-->
-                    <!--<p class="order-price">2 500</p>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-sm-1 order-button-wrapper">-->
-                <!--<div class="order-button js-button-show-order">-->
-                    <!--<img class="icon-arrow" src="img/icon-arrow.png">-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-sm-11 order-description-content">-->
-                <!--<p class="order-description-text">Мы соотнесем условия договора с Вашими потребностями и возможными рисками. Предложим формулировки, защищающие Вас от неблагоприятных последствий..</p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="container how-we-work">
+        <h2>Как мы работаем</h2>
+        <div class="row">
+            <div class="col">
+                <div class="work-img-wrapper">
+                    <img src="img/work-call.png">
+                </div>
+                <div class="work-content">
+                    <p>Звонок</p>
+                    <p>Позвоните нам по телефону
+                        <br>
+                        8 (846) 22 22 001
+                        <br>
+                        8 (927) 659 58 98</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="work-img-wrapper">
+                    <img src="img/work-consultation.png">
+                </div>
+                <div class="work-content">
+                    <p>Консультация</p>
+                    <p>Мы выслушаем Вашу проблему и совместно определим, достаточно ли просто консультации по телефону, и тогда решаем Вашу проблему дистанционно, или же договариваемся о встрече, обсуждаем варианты решения и план дальнейших действий</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="work-img-wrapper">
+                    <img src="img/work-offer.png">
+                </div>
+                <div class="work-content">
+                    <p>Договор</p>
+                    <p>Заключаем договор на оказание юридических услуг</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="work-img-wrapper">
+                    <img src="img/work-cost.png">
+                </div>
+                <div class="work-content">
+                    <p>Оплата</p>
+                    <p>Вы вносите аванс или оплачиваете услугу целиком. Условия по оплате зависят от вида услуги, срока ее оказания и полной стоимости договора.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="work-img-wrapper">
+                    <img src="img/work-build.png">
+                </div>
+                <div class="work-content">
+                    <p>Работа</p>
+                    <p>После внесения оплаты мы оперативно приступаем к работе, четко соблюдая все согласованные этапы, и, предоставляя обратную связь о ходе выполнения работы.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container comments" id="comments">
+        <h2>Отзывы клиентов</h2>
+        <div class="row">
+            <div class="col-sm-3">
+                <a data-fancybox="gallery" href="uploads/big_1.jpg"><img src="uploads/small_1.jpg">
+                    <p>ИП Мокеева Н.А., бренд "Kate Mond"</p>
+                    <p>Розничная торговля кожгалантереей, аксессуарами</p>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a data-fancybox="gallery" href="uploads/big_2.jpg"><img src="uploads/small_2.jpg">
+                    <p>ИП Кузьмина П.Э., бренд "Strekoza"</p>
+                    <p>Розничная торговля бижутерией, аксессуарами</p>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a data-fancybox="gallery" href="uploads/big_3.jpg"><img src="uploads/small_3.jpg">
+                    <p>ООО "Первое рекрутинговое агентство "Персонал-eXclusive"</p>
+                    <p>Поиск, оценка, отбор персонала</p>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a data-fancybox="gallery" href="uploads/big_4.jpg"><img src="uploads/small_4.jpg">
+                    <p>ООО "Промышленные покрытия"</p>
+                    <p>Торговля машинами, оборудованием, материалами</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Россия, Самара, Рабочая улица, 43, секция 5</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A900e1ea61c90496b12ec0056fd6c5951355315955f4409448e054bc408fa7275&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="politicsModal" tabindex="-1" role="dialog" aria-labelledby="politicsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="politicsModalLabel">Политика в области качества</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Мы всегда в курсе последних изменений действующего законодательства, тенденций судебной практики и новых правовых механизмов</li>
+                        <li>Мы гарантируем всем обратившимся к нам конфиденциальность полученной информации, в том числе, отказ в оказании услуги Вашему конкуренту по тому же делу, с которым Вы обратились</li>
+                        <li>Мы ценим Ваше время, поэтому обеспечиваем максимальную оперативность при оказании юридической консультации и ведении дела</li>
+                        <li>Мы регулярно предоставляем Вам обратную связь о ходе работы по делам, а также даем пояснения и комментарии при любом возможном отклонении от ранее согласованного плана</li>
+                        <li>Мы всегда даем оценку перспективы дела и рисков перед началом работы, реализуем только взвешенные решения</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -138,7 +279,7 @@
                     <p>© 2018</p>
                 </div>
                 <div class="col-sm-2">
-                    <p>+7 927 659 58 98</p>
+                    <p>8 (846) 22 22 001 <br> 8 (927) 659 58 98</p>
                 </div>
                 <div class="col-sm-2">
                     <p><a href="mailto:uroskop@mail.ru">uroskop@mail.ru</a></p>
@@ -146,9 +287,12 @@
             </div>
         </div>
     </footer>
+
     <script src="dist/jquery-3.3.1.js"></script>
     <script src="dist/popper.js"></script>
     <script src="dist/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
     <script src="src/js/price.js"></script>
+    <script src="src/js/scrollto.js"></script>
 </body>
 </html>
